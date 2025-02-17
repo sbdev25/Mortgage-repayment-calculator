@@ -1,4 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+# Mortgage-repayment-calculator
+=======
+>>>>>>> 2fd2eb9 (change)
 # Frontend Mentor - Mortgage repayment calculator
 
 ![Design preview for the Mortgage repayment calculator coding challenge](./preview.jpg)
@@ -96,6 +101,10 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+<<<<<<< HEAD
 =======
 # Mortgage-repayment-calculator
 >>>>>>> 3c0e289 (Initial commit)
+=======
+>>>>>>> 03f9366 (upload project)
+>>>>>>> 2fd2eb9 (change)
