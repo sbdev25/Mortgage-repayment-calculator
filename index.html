@@ -34,30 +34,40 @@
       </div>
       
       <div class="text">
-        <label for="mort">Mortgage Amount</label><br>
         <div class="in Mortgage">
-          <i class="fa-solid fa-dollar-sign"></i>
+          <label for="mort">Mortgage Amount</label><br>
+          <div class="inp">
+            
         <input type="text" name="Mortgage" id="mort">
+        <i class="fa-solid fa-dollar-sign"></i>
+          </div>
+          
         </div>
       
-
-      <label for="term">Mortgage Term</label><br>
+      <div class="years_perc">
+       
       <div class="in Mortgage">
-      
-      <input type="text" name="Mortgage_term" id="term">
+      <label for="term">Mortgage Term</label><br>
+      <div class="inp">
+        <input type="text" name="Mortgage_term" id="term">
       <p>years</p>
       </div>
-
-
-    <label for="intrest"> Interest Rate</label><br>
-    <div class="in Mortgage">
+      </div>
       
-    <input type="text" name="Intrest" id="intrest">
-    <i class="fas fa-percent"></i>
+      <div class="in Mortgage">
+      <label for="intrest"> Interest Rate</label><br>
+      <div class="inp">
+        <input type="text" name="Intrest" id="intrest">
+        <i class="fas fa-percent"></i>
+      </div>
+      
+      </div>
+
     </div>
+      
 
 
-  <label for="Mortgage_type">   Mortgage Type</label><br>
+  <label for="Mortgage_type">Mortgage Type</label><br>
    <div class="in Mortgage">
       <input type="radio" class="one" id="one" name="Mortgage-Type">
       <label for="one">Repayment</label>
@@ -98,7 +108,7 @@
               <h4> Your monthly repayments</h4>
               <h1 class="total_yellow">$1,797.74</h1>
               <hr>
-              <h4> Your monthly repayments</h4>
+              <h4>  Total you'll repay over the term</h4>
               <h3 class="total_white">$539,322.94</h3>
             </div>
           </div>
@@ -112,33 +122,5 @@
 
   </form>
   
-
-
-
-
-
-
-
-
-
-  <!-- Empty results end -->
-
-  <!-- Completed results start -->
-
-  Your results
-
-  Your results are shown below based on the information you provided. 
-  To adjust the results, edit the form and click “calculate repayments” again.
-
-  Your monthly repayments
-
-  Total you'll repay over the term
-
-  <!-- Completed results end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
