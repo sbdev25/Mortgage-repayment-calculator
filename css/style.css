@@ -28,6 +28,8 @@ body{
 --paragraphe-font-size:16px
 } 
 
+
+/* container  */
 .container{
     width:585px ;
     padding: 20px 20px;
@@ -40,12 +42,16 @@ body{
     background-color: var(--Slate-100);
 
 }
+
+
+/* first titls  */
 .white-section .Mortage-calculator {
     padding-block: 12px;
     color: var(--Slate-900);
    
 }
 .white-section #clr {
+    appearance: none;
     border:none ;
     background-color: transparent;
     text-decoration:underline;
@@ -62,3 +68,7 @@ body{
     
     
 }
+
+
+/* inputs  */
+
