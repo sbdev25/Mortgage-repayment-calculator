@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <!--font family   -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:wght@200;400;500;600;700;800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <!-- css -->
+   <link rel="stylesheet" href="css/style.css" />
+
+   <!-- font awsome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+
+   
+</head>
+<body>
+
+  <form action="" class="gen-form">
+
+    <!-- White section  -->
+    <div class="container white-section">
+      <div class="begin">
+        <h3 class="Mortage-calculator">Mortgage Calculator</h3>
+        <button type="reset" id="clr">Clear All</button>
+      </div>
+      
+      <div class="text">
+        <div class="in Mortgage">
+          <label for="mort">Mortgage Amount</label><br>
+          <div class="inp">
+            
+        <input type="text" name="Mortgage" id="mort">
+        <i class="fa-solid fa-dollar-sign"></i>
+          </div>
+          
+        </div>
+      
+      <div class="years_perc">
+       
+      <div class="in Mortgage">
+      <label for="term">Mortgage Term</label><br>
+      <div class="inp">
+        <input type="text" name="Mortgage_term" id="term">
+      <p>years</p>
+      </div>
+      </div>
+
+      <div class="in Mortgage">
+      <label for="intrest"> Interest Rate</label><br>
+      <div class="inp">
+        <input type="text" name="Intrest" id="intrest">
+        <i class="fas fa-percent"></i>
+      </div>
+      
+      </div>
+
+    </div>
+      
+
+
+  
+   <div class="in Mortgage except">
+    <label for="">Mortgage Type</label><br>
+    <div class="inp">
+      <label for="one" id="first"><input type="radio" class="one" id="one" name="Mortgage-Type"><span>Repayment</span></label>
+      <label for="two" id="second"><input type="radio" class="two" id="two" name="Mortgage-Type"><span>Interest Only</span></label>
+    </div>
+
+   </div>
+
+
+    <button type="submit" class="calc_rep"><img src="./assets/images/icon-calculator.svg" alt="">Calculate Repayments</button>
+    </div>
+    </div>
+
+    
+<!-- White section  end-->
+
+<!-- Black section  -->
+
+
+
+
+
+      <div class="container Black-section" style="display: none;">
+        <div class="img calc-backg">
+          <img src="./assets/images/illustration-empty.svg" alt="calc-backg">
+        </div>
+        <h3 class="results"> Results shown here</h3>
+        <p> Complete the form and click “calculate repayments” to see what 
+          your monthly repayments would be.</p>
+        </div>
+
+
+        <div class="container Black-section-second"  style="display: none;">
+          
+          <h3 class="results"> Your results</h3>
+          <p>  Your results are shown below based on the information you provided. 
+            To adjust the results, edit the form and click “calculate repayments” again.</p>
+            <div class="secton">
+              <h4> Your monthly repayments</h4>
+              <h1 class="total_yellow">$1,797.74</h1>
+              <hr>
+              <h4>  Total you'll repay over the term</h4>
+              <h3 class="total_white">$539,322.94</h3>
+            </div>
+          </div>
+      
+<!-- Black section  end -->
+
+
+
+
+    </div>
+
+  </form>
+  
+</body>
+</html>
