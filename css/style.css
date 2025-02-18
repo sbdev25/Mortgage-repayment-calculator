@@ -95,7 +95,8 @@ color: var(--Slate-700);
 .container .text .in .inp {
     margin-top: 20px;
 }
-
+.Mortgage
+{ width: 100%;}
 .Mortgage .inp {
     position: relative;
     width: 100%;
@@ -122,7 +123,7 @@ color: var(--Slate-700);
 .Mortgage .inp #mort:focus,#term:focus{
 outline-color: var(--Lime);
 }
-.Mortgage .inp input[type="text"]:focus+ .fa-dollar-sign {
+.Mortgage .inp #mort:focus+ .fa-dollar-sign {
     background-color: var(--Lime);
 }
 
@@ -141,11 +142,56 @@ outline-color: var(--Lime);
 
     
 }
-.Mortgage .inp input[type="text"]:focus+ p {
+.Mortgage .inp #term:focus+ p {
     background-color: var(--Lime);
     color: var(--Slate-900);
 }
 
 
 /* percent  */
+
+.Mortgage .inp .fa-percent {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1px;
+    padding: 11px 11px;
+    background-color: var(--Slate-100);
+    color:var(--Slate-700) ;
+    font-weight: bold;
+}
+.Mortgage .inp #intrest:focus{
+    outline-color: var(--Lime);
+}
+.Mortgage .inp #intrest:focus+ .fa-percent {
+    background-color: var(--Lime);
+    color: var(--Slate-900);
+}
+
+/* radio  */
+.except{
+position: relative;
+}
+.Mortgage .inp #first,#second {
+    display: block;
+    height: 40px;
+    width: 100%;
+    border: 1px solid var(--Slate-500);
+    padding-inline: 40px;
+    padding-top: 7px;
+    font-size: 16px;
+    position: relative;
+    
+    
+}
+.Mortgage .inp #first span ,#second span {
+    margin-left: 30px;
+    font-weight: bold;
+}
+.Mortgage .inp #first #one,#two {
+    position:absolute ;
+    height: 20px;
+    width: 20px;
+    accent-color: var(--Lime);
+}
 
