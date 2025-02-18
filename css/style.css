@@ -32,17 +32,15 @@ body{
 
 .gen-form{
     position: absolute;
-    width:768px ;
+    width:387px ;
     left: 50%;
     translate: -50%;
     background-color: aquamarine;
+    margin: 0;
 }
 /* container  */
 .container{
-    
-    
     padding: 20px 20px;
-    
 }
  .white-section {
     background-color: white;
@@ -70,9 +68,11 @@ body{
     background-color: transparent;
     text-decoration:underline;
     color: var(--Slate-700);
-    font-size: 14px;
+    font-size: 16px;
     width: 60px;
     padding-left: 0;
+    cursor: pointer;
+
 }
 .white-section .begin {
     display: flex;
@@ -111,6 +111,8 @@ color: var(--Slate-700);
     left: 1px;
     padding: 11px 11px;
     background-color: var(--Slate-100);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
     
 }
 .Mortgage .inp #mort,#term ,#intrest {
@@ -119,6 +121,7 @@ color: var(--Slate-700);
     border: 1px solid var(--Slate-500);
     padding-inline: 40px;
     font-size: 16px;
+    border-radius: 6px;
 }
 .Mortgage .inp #mort:focus,#term:focus{
 outline-color: var(--Lime);
@@ -139,6 +142,8 @@ outline-color: var(--Lime);
     background-color: var(--Slate-100);
     color:var(--Slate-700) ;
     font-weight: bold;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 
     
 }
@@ -146,7 +151,9 @@ outline-color: var(--Lime);
     background-color: var(--Lime);
     color: var(--Slate-900);
 }
-
+#term{
+    padding-inline: 20px;
+}
 
 /* percent  */
 
@@ -159,6 +166,8 @@ outline-color: var(--Lime);
     background-color: var(--Slate-100);
     color:var(--Slate-700) ;
     font-weight: bold;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .Mortgage .inp #intrest:focus{
     outline-color: var(--Lime);
@@ -166,6 +175,9 @@ outline-color: var(--Lime);
 .Mortgage .inp #intrest:focus+ .fa-percent {
     background-color: var(--Lime);
     color: var(--Slate-900);
+}
+#intrest{
+    padding-inline: 20px;
 }
 
 /* radio  */
@@ -181,6 +193,8 @@ position: relative;
     padding-top: 7px;
     font-size: 16px;
     position: relative;
+    margin-bottom: 10px;
+    border-radius: 6px;
     
     
 }
@@ -195,3 +209,29 @@ position: relative;
     accent-color: var(--Lime);
 }
 
+.Mortgage .inp #first:active,#second:active {
+    background-color: rgb(255, 255, 153);
+}
+
+
+.calc_rep {
+    background-color: var(--Lime);
+    padding-inline: 25px;
+    padding-block: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Slate-900);
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+    border-radius: 20px;
+    letter-spacing: 1.5;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+    
+}
+.calc_rep img {
+    margin-right: 10px;
+}
