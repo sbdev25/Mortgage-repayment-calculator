@@ -27,3 +27,38 @@ body{
 
 --paragraphe-font-size:16px
 } 
+
+.container{
+    width:585px ;
+    padding: 20px 20px;
+    
+    
+    
+
+}
+.container .white-section {
+    background-color: var(--Slate-100);
+
+}
+.white-section .Mortage-calculator {
+    padding-block: 12px;
+    color: var(--Slate-900);
+   
+}
+.white-section #clr {
+    border:none ;
+    background-color: transparent;
+    text-decoration:underline;
+    color: var(--Slate-700);
+    font-size: 14px;
+    width: 60px;
+    padding: 0;
+    margin: 0;
+
+}
+.white-section .begin {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
