@@ -5,6 +5,7 @@ box-sizing: border-box;
 }
 body{
     font-family: Plus Jakarta Sans;
+    background-color: var(--Slate-100);
 }
 
 
@@ -35,19 +36,16 @@ body{
     width:387px ;
     left: 50%;
     translate: -50%;
-    background-color: aquamarine;
     margin: 0;
 }
 /* container  */
 .container{
     padding: 20px 20px;
+    width: 90%;
+    margin:auto;
 }
  .white-section {
     background-color: white;
-    width: 90%;
-    margin:auto;
-    
-
 }
 
 
@@ -234,4 +232,96 @@ position: relative;
 }
 .calc_rep img {
     margin-right: 10px;
+}
+
+
+
+/* 
+*BLACK SECTION ONE
+*/
+
+.Black-section{
+    width: 90%;
+    margin:auto;
+    background-color: var(--Slate-900);
+    text-align: center;
+}
+.Black-section img {
+    margin-top: 20px;
+}
+
+.Black-section h3 ,.Black-section p {
+    margin-top: 15px;
+    color:white ;
+
+}
+
+/* 
+*BLACK SECTION Two
+*/
+
+.Black-section-second {
+    width: 90%;
+    margin:auto;
+    background-color: var(--Slate-900);
+    
+}
+
+.Black-section-second h3 ,.Black-section-second p {
+    margin-block: 15px;
+    color:white ;
+    line-height: 1.5;
+
+}
+.Black-section-second h3 {
+    font-size: 20px;
+}
+.Black-section-second p {
+  color: var(--Slate-300);
+}
+.Black-section-second .secton {
+    padding: 13px 15px;
+    background-color:rgb(16, 33, 45) ;
+    border: 5px solid;
+    border-color: var(--Lime) transparent transparent transparent;
+    border-radius:6px ;
+}
+.Black-section-second .secton h4 {
+    color: var(--Slate-300);
+    font-size: 16px;
+    padding-top: 15px;
+}
+.Black-section-second .secton h1 {
+    padding-block: 12px;
+    color: var(--Lime);
+}
+.Black-section-second .secton h3 {
+    padding-block: 1px;
+}
+
+
+@media (min-width:390px){
+.gen-form {
+    width:500px ;
+    display: flex;
+    align-items: center;
+}
+
+.white-section .begin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.white-section {
+    height: 75vh;
+    margin-top: 25;
+    
+}
+
+
+
+
+
+
 }
