@@ -9,6 +9,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 
@@ -122,6 +123,8 @@ color: var(--Slate-700);
     padding-inline: 40px;
     font-size: 16px;
     border-radius: 6px;
+    color: var(--Slate-700);
+    font-weight: bold;
 }
 .Mortgage .inp #mort:focus,#term:focus{
 outline-color: var(--Lime);
@@ -230,6 +233,7 @@ position: relative;
     margin-top: 20px;
     width: 100%;
     cursor: pointer;
+    text-align: center;
     
 }
 .calc_rep img {
@@ -241,30 +245,66 @@ position: relative;
         display: flex;
         flex-direction: row;
         width:1000px ;
-        
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: white;
     }
     .white-section .begin {
         flex-direction: row;
         justify-content: space-between;
+        
     }
+    .years_perc .Mortgage{
+        
+        width: 40%;
+    } 
     .years_perc {
         display: flex;
         justify-content: space-between;
         width: 100%;
+        
     }
     .years_perc .inp {
-        width: 50%;
+        width:100% ;
+        
     }
 
 
     /* container */
     .white-section {
-        padding-inline: 80px;
+        
         width: 90%;
         margin:auto;
     }
     
+    .calc_rep {
+        width: 60%;
+    }
+
+
+    /* 
+*BLACK SECTION Two  and one
+*/
+.gen-form .Black-section-second {
+    margin: 0;
+    border-bottom-left-radius: 100px ;
+    border: solid 1px transparent;
+    padding-inline: 30px;
+}
+.Black-section-second .secton h1 {
+    font-size: 60px;
+}
+
+.gen-form  .Black-section {
+    margin: 0;
+    padding: 80px 40px;
+    border-bottom-left-radius: 100px ;
+    border: solid 1px transparent;
     
+}
+
+
+
 
 }
 
