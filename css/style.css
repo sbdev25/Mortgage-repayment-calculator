@@ -136,7 +136,7 @@ outline-color: var(--Lime);
 
 /* years */
 
-.Mortgage .inp p {
+.years_perc .Mortgage .inp p {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -150,7 +150,7 @@ outline-color: var(--Lime);
 
     
 }
-.Mortgage .inp #term:focus+ p {
+.years_perc .Mortgage .inp #term:focus+ p {
     background-color: var(--Lime);
     color: var(--Slate-900);
 }
@@ -214,6 +214,7 @@ position: relative;
 
 .Mortgage .inp #first:active,#second:active {
     background-color: rgb(255, 255, 153);
+    
 }
 
 
@@ -240,6 +241,70 @@ position: relative;
     margin-right: 10px;
 }
 
+
+/* class eroor  */
+
+/* el input */
+
+.error .Mortgage .inp #mort,
+.error .Mortgage .inp #term ,
+.error .Mortgage .inp #intrest {
+    
+    border: 2px solid var(--Red);
+    
+}
+/* dollar change color */
+.error .Mortgage .inp .fa-dollar-sign {
+    
+    background-color: var(--Red);
+    color: white;
+}
+/* color when foucus  */
+.error .Mortgage .inp #mort:focus,.error .Mortgage .inp  #term:focus{
+    outline-color: var(--Red);
+    }
+    /* dollar when focus  */
+    .error .Mortgage .inp #mort:focus+ .fa-dollar-sign {
+        background-color: var(--Red);
+    }
+/* years color  */
+   .error .years_perc .Mortgage .inp p {
+        background-color: var(--Red);
+        color: white;
+    }
+
+
+    .error .years_perc .Mortgage .inp #term:focus+ p {
+        background-color: var(--Red);
+        color: white;
+    }
+
+    .error .Mortgage .inp .fa-percent {
+        background-color: var(--Red);
+        color: white;
+    }
+
+    .error .Mortgage .inp #intrest:focus{
+        outline-color: var(--Red);
+    }
+    .error .Mortgage .inp #intrest:focus+ .fa-percent {
+        background-color: var(--Red);
+        color: white;
+    }
+
+
+
+    /* p-er class */
+
+    .p-er {
+        display: none;
+        color: var(--Red);
+        letter-spacing: 0.5px;
+    }
+    /* percent error  */
+
+/* end class eroor */
+
 @media (min-width:768px){
     .gen-form{
         display: flex;
@@ -248,6 +313,9 @@ position: relative;
         margin-top: 20px;
         margin-bottom: 20px;
         background-color: white;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        
     }
     .white-section .begin {
         flex-direction: row;
@@ -271,8 +339,10 @@ position: relative;
 
 
     /* container */
-    .white-section {
-        
+    .gen-form .white-section {
+        border: 1px solid transparent;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
         width: 90%;
         margin:auto;
     }
@@ -287,9 +357,13 @@ position: relative;
 */
 .gen-form .Black-section-second {
     margin: 0;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
     border-bottom-left-radius: 100px ;
     border: solid 1px transparent;
     padding-inline: 30px;
+   
+        
 }
 .Black-section-second .secton h1 {
     font-size: 60px;
@@ -298,6 +372,8 @@ position: relative;
 .gen-form  .Black-section {
     margin: 0;
     padding: 80px 40px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
     border-bottom-left-radius: 100px ;
     border: solid 1px transparent;
     
