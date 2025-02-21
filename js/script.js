@@ -88,8 +88,8 @@ calc_button.addEventListener("click",function(event){
     }else{
         B2.style.display="block"
         B1.style.display="none"
-        big_calc.innerHTML="$"+res;
-        small_calc.innerHTML="$"+res_month;
+        big_calc.innerHTML="$"+res_month;
+        small_calc.innerHTML="$"+res;
         container.classList["remove"]("error")
         p_er_mort.style.display="none";
         p_er_term.style.display="none";
