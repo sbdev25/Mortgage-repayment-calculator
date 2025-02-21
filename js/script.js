@@ -61,7 +61,7 @@ calc_button.addEventListener("click",function(event){
     let res;
     let res_month;
     res_month=in_mort_amount.value*in_int_rate.value/100
-    res=in_mort_amount.value*in_term_amount.value*in_int_rate.value/100;
+    res=in_mort_amount.value*in_term_amount.value*in_int_rate.value/100*12;
 
 
 
