@@ -28,7 +28,7 @@
   <form action="" class="gen-form">
 
     <!-- White section  -->
-    <div class="container white-section  ">
+    <div class="container white-section " id="cont">
       <div class="begin">
         <h3 class="Mortage-calculator">Mortgage Calculator</h3>
         <button type="reset" id="clr">Clear All</button>
@@ -41,7 +41,7 @@
         <input type="text" name="Mortgage" id="mort">
         <i class="fa-solid fa-dollar-sign"></i>
           </div>
-          <p class="p-er">this field is required</p>
+          <p class="p-er" id="p-er-mort">this field is required</p>
           
         </div>
       
@@ -53,7 +53,7 @@
         <input type="text" name="Mortgage_term" id="term">
       <p>years</p>
       </div>
-      <p class="p-er">this field is required</p>
+      <p class="p-er" id="p-er-term">this field is required</p>
         </div>
         
       
@@ -66,7 +66,7 @@
         <i class="fas fa-percent"></i>
       </div>
 
-      <p class="p-er">this field is required</p>
+      <p class="p-er" id="p-er-intrest">this field is required</p>
         </div>
 
       
@@ -85,9 +85,9 @@
       <label for="one" id="first"><input type="radio" class="one" id="one" name="Mortgage-Type"><span>Repayment</span></label>
       <label for="two" id="second"><input type="radio" class="two" id="two" name="Mortgage-Type"><span>Interest Only</span></label>
     </div>
-    <p class="p-er">this field is required</p>
+    <p class="p-er" id="p-er-rad">this field is required</p>
   </div>
-    <button type="submit" class="calc_rep"><img src="./assets/images/icon-calculator.svg" alt="">Calculate Repayments</button>
+    <button type="submit" class="calc_rep" id="calc_rep"><img src="./assets/images/icon-calculator.svg" alt="">Calculate Repayments</button>
     </div>
     </div>
 
@@ -100,7 +100,7 @@
 
 
       
-        <div class="container Black-section" style="display: block;">
+        <div class="container Black-section" id="B1" style="display: block;">
         <div class="img calc-backg">
           <img src="./assets/images/illustration-empty.svg" alt="calc-backg">
         </div>
@@ -112,17 +112,17 @@
       
 
 
-        <div class="container Black-section-second"  style="display: none;">
+        <div class="container Black-section-second" id="B2" style="display: none;">
           
           <h3 class="results"> Your results</h3>
           <p>  Your results are shown below based on the information you provided. 
             To adjust the results, edit the form and click “calculate repayments” again.</p>
             <div class="secton">
               <h4> Your monthly repayments</h4>
-              <h1 class="total_yellow">$1,797.74</h1>
+              <h1 class="total_yellow" id="big_calc">$1,797.74</h1>
               <hr>
               <h4>  Total you'll repay over the term</h4>
-              <h3 class="total_white">$539,322.94</h3>
+              <h3 class="total_white" id="small_calc">$539,322.94</h3>
             </div>
           </div>
       
@@ -132,4 +132,5 @@
   </form>
   
 </body>
+<script src="js/script.js"></script>
 </html>
