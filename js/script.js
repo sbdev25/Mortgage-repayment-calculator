@@ -72,13 +72,16 @@ calc_button.addEventListener("click",function(event){
 
 
     // mort errors
-    if(isNaN(res) || res===0  ||( rad_first.checked===false && rad_second.checked===false)){
+     if(isNaN(res) || res===0  ||( rad_first.checked===false && rad_second.checked===false)){
 
     
     
-    if( in_mort_amount.value==="" ||in_mort_amount.value==0 ){
-        p_er_mort.style.display="block";
+    if( in_mort_amount.value===" " || in_mort_amount.value==0 ){
+
         in_mort.classList["add"]("error");
+        p_er_mort.style.display="block";
+        
+        console.log("he is ")
         
 
     }else{
@@ -116,7 +119,7 @@ calc_button.addEventListener("click",function(event){
     // percent
 
 
-    if( in_int_rate.value==="" || in_int_rate.value==0){
+    if( in_int_rate.value===" " || in_int_rate.value==0){
         p_er_intrest.style.display="block";
         in_intrest.classList["add"]("error");
     }else{
@@ -155,8 +158,6 @@ calc_button.addEventListener("click",function(event){
         p_er_term.style.display="none";
         p_er_number_term.style.display="none";
         p_er_number_mort.style.display="none";
-
-
 
         in_mort.classList["add"]("error");
         in_mort.classList["remove"]("error");
