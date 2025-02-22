@@ -56,6 +56,7 @@ const B2 = document.getElementById("B2");
 let tab=[];
 let count =0 ;
 calc_button.addEventListener("click",function(event){
+   
     count++
     event.preventDefault();
     let res;
@@ -95,10 +96,17 @@ calc_button.addEventListener("click",function(event){
         p_er_term.style.display="none";
         p_er_intrest.style.display="none";
         p_er_rad.style.display="none";
+        window.scrollTo({
+            top: 1000 ,
+            behavior: 'smooth' // Optional: Adds smooth scrolling
+          });
+
+
+    
     }
 
    
-    
+   
     
 
     
