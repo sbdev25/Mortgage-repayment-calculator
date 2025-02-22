@@ -248,48 +248,48 @@ position: relative;
 
 /* el input */
 
-.error .Mortgage .inp #mort,
-.error .Mortgage .inp #term ,
-.error .Mortgage .inp #intrest {
+.error  .inp #mort,
+.error  .inp #term ,
+.error  .inp #intrest {
     
     border: 2px solid var(--Red);
     
 }
 /* dollar change color */
-.error .Mortgage .inp .fa-dollar-sign {
+.error  .inp .fa-dollar-sign {
     
     background-color: var(--Red);
     color: white;
 }
 /* color when foucus  */
-.error .Mortgage .inp #mort:focus,.error .Mortgage .inp  #term:focus{
+.error .inp #mort:focus,.error .Mortgage .inp  #term:focus{
     outline-color: var(--Red);
     }
     /* dollar when focus  */
-    .error .Mortgage .inp #mort:focus+ .fa-dollar-sign {
+    .error  .inp #mort:focus+ .fa-dollar-sign {
         background-color: var(--Red);
     }
 /* years color  */
-   .error .years_perc .Mortgage .inp p {
+    .years_perc .error .inp p {
         background-color: var(--Red);
         color: white;
     }
 
 
-    .error .years_perc .Mortgage .inp #term:focus+ p {
+     .years_perc .error .inp #term:focus+ p {
         background-color: var(--Red);
         color: white;
     }
 
-    .error .Mortgage .inp .fa-percent {
+    .error .inp .fa-percent {
         background-color: var(--Red);
         color: white;
     }
 
-    .error .Mortgage .inp #intrest:focus{
+    .error  .inp #intrest:focus{
         outline-color: var(--Red);
     }
-    .error .Mortgage .inp #intrest:focus+ .fa-percent {
+    .error  .inp #intrest:focus+ .fa-percent {
         background-color: var(--Red);
         color: white;
     }

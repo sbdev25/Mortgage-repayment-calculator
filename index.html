@@ -34,7 +34,7 @@
         <button type="reset" id="clr">Clear All</button>
       </div>
       <div class="text">
-        <div class="in Mortgage">
+        <div class="in Mortgage" id="in-mort">
           <label for="mort">Mortgage Amount</label><br>
           <div class="inp">
             
@@ -42,23 +42,25 @@
         <i class="fa-solid fa-dollar-sign"></i>
           </div>
           <p class="p-er" id="p-er-mort">this field is required</p>
+          <p class="p-er" id="p-er-number-mort">you should put a number </p>
           
         </div>
       
       <div class="years_perc">
        
-        <div class="in Mortgage">
+        <div class="in Mortgage" id="in-term">
           <label for="term">Mortgage Term</label><br>
       <div class="inp">
         <input type="text" name="Mortgage_term" id="term">
       <p>years</p>
       </div>
       <p class="p-er" id="p-er-term">this field is required</p>
+      <p class="p-er" id="p-er-number-term">you should put a number </p>
         </div>
         
       
       
-        <div class="in Mortgage">
+        <div class="in Mortgage" id="in-intrest">
           <label for="intrest"> Interest Rate</label><br>
       <div class="inp">
         
@@ -67,6 +69,7 @@
       </div>
 
       <p class="p-er" id="p-er-intrest">this field is required</p>
+      <p class="p-er" id="p-er-number-intrest">you should put a number </p>
         </div>
 
       
@@ -86,6 +89,7 @@
       <label for="two" id="second"><input type="radio" class="two" id="two" name="Mortgage-Type"><span>Interest Only</span></label>
     </div>
     <p class="p-er" id="p-er-rad">this field is required</p>
+
   </div>
     <button type="submit" class="calc_rep" id="calc_rep"><img src="./assets/images/icon-calculator.svg" alt="">Calculate Repayments</button>
     </div>
