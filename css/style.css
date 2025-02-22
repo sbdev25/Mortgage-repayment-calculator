@@ -262,7 +262,7 @@ position: relative;
     color: white;
 }
 /* color when foucus  */
-.error .inp #mort:focus,.error .Mortgage .inp  #term:focus{
+.error .inp #mort:focus,.error  .inp  #term:focus{
     outline-color: var(--Red);
     }
     /* dollar when focus  */
@@ -279,6 +279,7 @@ position: relative;
      .years_perc .error .inp #term:focus+ p {
         background-color: var(--Red);
         color: white;
+        
     }
 
     .error .inp .fa-percent {
