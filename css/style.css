@@ -9,6 +9,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    overflow: scroll;
     
 }
 
@@ -450,3 +452,16 @@ position: relative;
 }
 
 
+/* rights reserved  */
+
+.copy {
+    text-align: center;
+    font-size: 16px;
+    color: var(--Slate-900);
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    padding: 20px;
+    
+}
