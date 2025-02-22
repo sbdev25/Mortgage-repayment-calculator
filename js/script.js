@@ -25,7 +25,9 @@ const calc_button = document.getElementById("calc_rep")
 // END CALCULATE BUTTON
 
 // error of outline  
-const container = document.getElementById("cont");
+const in_mort = document.getElementById("in-mort");
+const in_term = document.getElementById("in-term");
+const in_intrest = document.getElementById("in-intrest");
 
 
 
@@ -76,15 +78,18 @@ calc_button.addEventListener("click",function(event){
     
     if( in_mort_amount.value==="" ||in_mort_amount.value==0 ){
         p_er_mort.style.display="block";
-        container.classList["add"]("error");
+        in_mort.classList["add"]("error");
         
 
     }else{
         p_er_mort.style.display="none";
+        in_mort.classList["remove"]("error");
     }
     if(isNaN(in_mort_amount.value)){
+        in_mort.classList["add"]("error");
         p_er_number_mort.style.display="block";
     }else{
+        in_mort.classList["remove"]("error");
         p_er_number_mort.style.display="none";
     }
 
@@ -93,15 +98,18 @@ calc_button.addEventListener("click",function(event){
 
      if( in_term_amount.value==="" || in_term_amount.value==0){
         p_er_term.style.display="block";
-        container.classList["add"]("error");
+        in_term.classList["add"]("error");
         
         
     }else{
         p_er_term.style.display="none";
+        in_term.classList["remove"]("error");
     }
     if(isNaN(in_term_amount.value) ){
+        in_term.classList["add"]("error");
         p_er_number_term.style.display="block";
     }else{
+        in_term.classList["remove"]("error");
         p_er_number_term.style.display="none";
     }
 
@@ -110,14 +118,20 @@ calc_button.addEventListener("click",function(event){
 
     if( in_int_rate.value==="" || in_int_rate.value==0){
         p_er_intrest.style.display="block";
-        container.classList["add"]("error");
+        in_intrest.classList["add"]("error");
     }else{
         p_er_intrest.style.display="none";
+        in_intrest.classList["remove"]("error");
     }
     if(isNaN(in_int_rate.value)){
+        in_intrest.classList["add"]("error");
         p_er_number_intrest.style.display="block";
     }else{
         p_er_number_intrest.style.display="none";
+        in_intrest.classList["remove"]("error");
+        
+        
+
     }
 
 
@@ -134,19 +148,24 @@ calc_button.addEventListener("click",function(event){
         B1.style.display="none"
         big_calc.innerHTML="$"+res_month;
         small_calc.innerHTML="$"+res;
-        container.classList["remove"]("error")
         p_er_rad.style.display="none";
         p_er_number_intrest.style.display="none";
         p_er_intrest.style.display="none";
         p_er_mort.style.display="none";
         p_er_term.style.display="none";
         p_er_number_term.style.display="none";
-
-
         p_er_number_mort.style.display="none";
 
 
 
+        in_mort.classList["add"]("error");
+        in_mort.classList["remove"]("error");
+
+        in_term.classList["add"]("error");
+        in_term.classList["remove"]("error");
+
+        in_intrest.classList["add"]("error");
+        in_intrest.classList["remove"]("error");
 
 
         window.scrollTo({
